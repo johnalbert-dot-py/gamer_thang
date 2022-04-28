@@ -1,0 +1,207 @@
+@import "./components.scss";
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-family-1);
+  position: relative;
+  min-height: 100%;
+  background: linear-gradient(180deg, #292338, #2d2d2d);
+}
+
+html,
+body {
+  width: 100%;
+  outline-color: transparent;
+  font-family: var(--font-family-1) !important;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  margin-top: 10px;
+  color: var(--primary-light);
+  #detail {
+    .game-detail__grid {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr 143px;
+      grid-column-gap: 15px;
+      grid-row-gap: 10px;
+    }
+    .game-detail__banner {
+      grid-area: 1 / 1 / 2 / 2;
+      img {
+        border-radius: 4px;
+      }
+    }
+    .game-detail__banner-controller {
+      grid-area: 2 / 1 / 3 / 2;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      img {
+        border-radius: 4px;
+      }
+    }
+    .game-detail__checkout-detail {
+      grid-area: 1 / 2 / 3 / 3;
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+
+      .checkout-detail__summary {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .genres {
+          font-size: 12px !important;
+          font-weight: 600;
+          font-family: var(--font-family-3);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 5px;
+          text-transform: uppercase;
+          span {
+            background-color: var(--dark-violet-secondary);
+          }
+        }
+
+        .checkout-detail__summary__dev {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 1fr;
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+          margin-bottom: -15px;
+
+          .checkout-detail__summary__dev-key {
+            grid-area: 1 / 1 / 2 / 2;
+          }
+          .checkout-detail__summary__dev-val {
+            grid-area: 1 / 2 / 2 / 3;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+
+  #description {
+    margin-top: 30px;
+    h2 {
+      font-weight: 400;
+      max-width: 55%;
+      line-height: 138%;
+    }
+
+    .description-summary {
+      margin-top: 20px;
+      width: 55%;
+      font-size: 1.2rem;
+      line-height: 138%;
+    }
+  }
+
+  #overall {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+
+    .overall__item {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 1.8rem;
+        font-weight: 600;
+        font-family: var(--font-family-1);
+        color: #90d993 !important;
+        line-height: 138%;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 138%;
+      }
+    }
+  }
+
+  #specs {
+    margin-top: 35px;
+    background-color: #1f1f1f;
+    width: 72%;
+    height: auto;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 17px -4px rgba(0, 0, 0, 0.25);
+    dt {
+      color: var(--placeholder);
+    }
+
+    .specs--grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.5fr repeat(3, 1fr);
+      grid-column-gap: 5px;
+      grid-row-gap: 10px;
+
+      .specs--grid--title-minimum {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .specs--grid--title-recommended {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .specs--grid--os-minimum {
+        grid-area: 2 / 1 / 3 / 2;
+        display: flex;
+        flex-direction: column;
+        line-height: 138%;
+        span:first-child {
+          color: var(--placeholder);
+        }
+      }
+      .specs--grid--os-recommended {
+        grid-area: 2 / 2 / 3 / 3;
+        display: flex;
+        flex-direction: column;
+        line-height: 138%;
+        span:first-child {
+          color: var(--placeholder);
+        }
+      }
+      .specs--grid--cpu-minimum {
+        grid-area: 3 / 1 / 4 / 2;
+        display: flex;
+        flex-direction: column;
+        line-height: 138%;
+      }
+      .specs--grid--cpu-recommended {
+        grid-area: 3 / 2 / 4 / 3;
+        display: flex;
+        flex-direction: column;
+        line-height: 138%;
+      }
+      .specs--grid--memory-minimum {
+        grid-area: 4 / 1 / 5 / 2;
+        display: flex;
+        flex-direction: column;
+        line-height: 138%;
+      }
+      .specs--grid--memory-recommended {
+        grid-area: 4 / 2 / 5 / 3;
+        display: flex;
+        flex-direction: column;
+        line-height: 138%;
+      }
+    }
+  }
+}
