@@ -85,13 +85,12 @@
             />
           </div>
           <div class="auth-right">
-            <form>
+            <form method="POST" id="login-form" action="">
               <div class="auth-right__header">
                 <h1>Welcome Back</h1>
                 <p>Please enter your username and password to login.</p>
               </div>
               <div class="auth-right__form">
-                <form method="POST">
                   <div class="auth-right__form-group">
                     <label for="email">Email:</label>
                     <input
@@ -111,11 +110,10 @@
                     />
                   </div>
                   <div class="auth-right__form-group">
-                    <button type="btn" class="btn btn-primary btn-sm">
+                    <button type="submit" class="btn btn-primary btn-sm">
                       Log In
                     </button>
                   </div>
-                </form>
                 <div class="tips">
                   Don't have a Account? <a href="signup.html">Sign Up</a>
                 </div>
@@ -177,54 +175,6 @@
       </section>
     </footer>
 
-    <script src="./dist/splide/dist/js/splide.min.js"></script>
-    <script src="./dist/fontawesome/js/all.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const splide = new Splide(".splide:nth-child(1)", {
-          autoplay: true,
-          type: "loop",
-          interval: 5000,
-          perPage: 1,
-          arrows: false,
-          pagination: false,
-        }).mount();
-
-        const splide2 = new Splide(document.querySelectorAll(".splide")[1], {
-          autoHeight: true,
-          autoWidth: true,
-          autoplay: true,
-          perPage: 1,
-          perMove: 1,
-          type: "slide",
-          arrows: false,
-          pagination: false,
-        }).mount();
-
-        let gameSlider = document
-          .querySelectorAll(".game-slider__item")
-          .forEach((slider) => {
-            slider.addEventListener("click", () => {
-              let page = slider.getAttribute("page");
-              splide.go(parseInt(page) - 1);
-              console.log("paging to " + page);
-            });
-          });
-
-        splide.on("moved", (currentIndex, prevIndex) => {
-          let page = currentIndex + 1;
-          let activeSlider = document.querySelector(
-            ".game-slider__item[page='" + page + "']"
-          );
-
-          document
-            .querySelectorAll(".game-slider__item.active")
-            .forEach((slider) => {
-              slider.classList.remove("active");
-            });
-          activeSlider.classList.add("active");
-        });
-      });
-    </script>
+    <script src="./js/auth.js"></script>
   </body>
 </html>
