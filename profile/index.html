@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- svg as icon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../img/logo/light/light-player-logo.svg"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- extension -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous" />
+
+    <!-- the main external css -->
+    <link rel="stylesheet" href="../css/profile.css" />
+    <!-- internal css -->
+    <style type="text/css">
+      body {
+        font-family: var(--font-family-2);
+      }
+    </style>
+
+    <title>itws-01 | GamerThang</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img
+            src="../img/logo/violet/violet-text-logo.svg"
+            id="gamerthang-logo"
+            alt="GamerThang, Just a Gamer things"
+          />
+        </div>
+        <ul class="navbar__items">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../community.html">Community</a>
+          </li>
+          <li>
+            <a href="../content/support.html">Support</a>
+          </li>
+          <li>
+            <a href="../signup.html">Sign Up</a>
+          </li>
+          <li>
+            <a href="../login.html">Log In</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="navbar-2">
+        <div class="navbar-2__left">
+          <form method="GET" action="">
+            <input
+              type="text"
+              name="search"
+              class="input-default"
+              placeholder="Search"
+            />
+          </form>
+          <a href="../index.html"> Browse </a>
+          <a
+            href="../profile/index.html"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              margin-left: 10px;
+            "
+            class="active"
+          >
+            <i class="fa-solid fa-user" style="font-size: 12px"></i>itws-01
+          </a>
+        </div>
+        <div class="navbar-2__right">
+          <a href="../cart.html"> Cart </a>
+
+          <a href="#"> Wishlist </a>
+        </div>
+      </nav>
+
+      <main>
+        <aside>
+          <li class="active">
+            <a href="../profile/index.html">General</a>
+          </li>
+          <li>
+            <a href="../profile/purchases.html">Purchases</a>
+          </li>
+          <li>
+            <a href="../profile/library.html">Library</a>
+          </li>
+          <li>
+            <a href="../profile/password.html">Password & Security</a>
+          </li>
+        </aside>
+        <section>
+          <h1>General Settings</h1>
+          <h2>Account Information</h2>
+          <form
+            style="display: flex; flex-direction: column; gap: 20px"
+            method="POST"
+            id="account-form"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                gap: 40px;
+              "
+            >
+              <div style="width: 100%">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  value="itws-01"
+                  class="input-default"
+                  required
+                />
+              </div>
+              <div style="width: 100%">
+                <label for="full_name">Full Name</label>
+                <input
+                  type="text"
+                  id="full_name"
+                  name="full_name"
+                  value="Juan Dela Cruz"
+                  class="input-default"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value="juandelacruz@neust.edu.ph"
+                class="input-default"
+                required
+              />
+            </div>
+            <div style="width: 10%; align-self: flex-end">
+              <button
+                class="btn btn-primary btn-sm"
+                style="font-weight: 500"
+                type="submit"
+              >
+                UPDATE
+              </button>
+            </div>
+          </form>
+          <br />
+          <h2>Address</h2>
+          <form
+            style="display: flex; flex-direction: column; gap: 20px"
+            method="POST"
+            id="address-form"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                gap: 40px;
+              "
+            >
+              <div style="width: 100%">
+                <label for="street">Street</label>
+                <input
+                  type="text"
+                  id="street"
+                  name="street"
+                  value="CWXQ+8M5 Sumacab"
+                  class="input-default"
+                  required
+                />
+              </div>
+              <div style="width: 100%">
+                <label for="city">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  value="Cabanatuan City"
+                  class="input-default"
+                  required
+                />
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                gap: 40px;
+              "
+            >
+              <div style="width: 100%">
+                <label for="region">Region</label>
+                <input
+                  type="text"
+                  id="region"
+                  name="region"
+                  value="Nueva Ecija"
+                  class="input-default"
+                  required
+                />
+              </div>
+              <div style="width: 100%">
+                <label for="country">Country</label>
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  value="Philippines"
+                  class="input-default"
+                  required
+                />
+              </div>
+            </div>
+            <div style="width: 10%; align-self: flex-end">
+              <button
+                class="btn btn-primary btn-sm"
+                style="font-weight: 500"
+                type="submit"
+              >
+                UPDATE
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <section>
+        <div class="footer__logo">
+          <img src="../img/logo/light/light-full-logo.svg" alt="logo" />
+          <h4>" Just a Gamer Things "</h4>
+        </div>
+
+        <div class="footer__splitter"></div>
+
+        <div class="footer__menus">
+          <div class="footer__menus__item">
+            <span> Our Store </span>
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="../community.html">Community</a>
+              </li>
+              <li class="footer__list__item">
+                <a href="../content/support.html">Support</a>
+              </li>
+              <li class="footer__list__item">
+                <a href="../signup.html">Sign Up</a>
+              </li>
+              <li class="footer__list__item">
+                <a href="../login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menus__item">
+            <span> Resource Used </span>
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="https://playvalorant.com/en-us/" target="_blank"
+                  >Riot Games</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="https://store.epicgames.com/en-US/" target="_blank"
+                  >Epic Games</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="https://store.steampowered.com/" target="_blank"
+                  >Steam</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", (e) => {
+        const navbar2 = document.querySelector(".navbar-2");
+        console.log(window.scrollY);
+        if (window.scrollY >= 70) {
+          navbar2.classList.add("navbar-2--fixed");
+        } else {
+          navbar2.classList.remove("navbar-2--fixed");
+        }
+      });
+    </script>
+  </body>
+</html>

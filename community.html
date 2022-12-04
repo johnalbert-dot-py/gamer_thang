@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- svg as icon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./img/logo/light/light-player-logo.svg"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- extension -->
+    <link rel="stylesheet" href="./dist/splide/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous" />
+
+    <!-- the main external css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/community.css" />
+
+    <!-- internal css -->
+    <style type="text/css">
+      body {
+        font-family: var(--font-family-2);
+        background: linear-gradient(
+            180deg,
+            rgba(56, 49, 73, 0.699) 0%,
+            #1f1f1f 59.9%
+          ),
+          url(./img/banners/home/valorant.jpg);
+        background-size: cover !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+
+    <title>Community | GamerThang, Just a Gamer Things</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img
+            src="./img/logo/violet/violet-text-logo.svg"
+            id="gamerthang-logo"
+            alt="GamerThang, Just a Gamer things"
+          />
+        </div>
+        <ul class="navbar__items">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="active" href="#">Community</a>
+          </li>
+          <li>
+            <a href="content/support.html">Support</a>
+          </li>
+          <li>
+            <a href="signup.html">Sign Up</a>
+          </li>
+          <li>
+            <a href="login.html">Log In</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="search">
+          <div class="search__logo">
+            <img src="./img/logo/light/light-full-logo.svg" />
+          </div>
+
+          <div class="search__field">
+            <h1>Welcome to our Community</h1>
+            <form method="GET" action="">
+              <input
+                type="text"
+                name="search"
+                class="input-default input-lg"
+                placeholder="Search by Title or description"
+              />
+            </form>
+          </div>
+        </section>
+
+        <section id="popular-content">
+          <a
+            href="content/community-content.html"
+            class="popular-content__item"
+          >
+            <div class="popular-content__item__left">
+              <div class="popular-content__item__left-title">
+                <h2>How to Login</h2>
+              </div>
+              <div class="popular-content__item__left-author">
+                <h4>Post by: <span>GamerThang</span></h4>
+              </div>
+            </div>
+            <div class="popular-content__item__right">
+              <i class="fa-solid fa-eye" style="color: #90d993"></i>
+              100
+            </div>
+          </a>
+          <a
+            href="content/community-content.html"
+            class="popular-content__item"
+          >
+            <div class="popular-content__item__left">
+              <div class="popular-content__item__left-title">
+                <h2>How to Sign Up</h2>
+              </div>
+              <div class="popular-content__item__left-author">
+                <h4>Post by: <span>GamerThang</span></h4>
+              </div>
+            </div>
+            <div class="popular-content__item__right">
+              <i class="fa-solid fa-eye" style="color: #90d993"></i>
+              100
+            </div>
+          </a>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <section>
+        <div class="footer__logo">
+          <img src="./img/logo/light/light-full-logo.svg" alt="logo" />
+          <h4>" Just a Gamer Things "</h4>
+        </div>
+
+        <div class="footer__splitter"></div>
+
+        <div class="footer__menus">
+          <div class="footer__menus__item">
+            <span> Our Store </span>
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="./community.html">Community</a>
+              </li>
+              <li class="footer__list__item">
+                <a href="./content/support.html">Support</a>
+              </li>
+              <li class="footer__list__item">
+                <a href="./signup.html">Sign Up</a>
+              </li>
+              <li class="footer__list__item">
+                <a href="./login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menus__item">
+            <span> Resource Used </span>
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="https://playvalorant.com/en-us/" target="_blank"
+                  >Riot Games</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="https://store.epicgames.com/en-US/" target="_blank"
+                  >Epic Games</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="https://store.steampowered.com/" target="_blank"
+                  >Steam</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./dist/splide/dist/js/splide.min.js"></script>
+    <script src="./dist/fontawesome/js/all.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const splide = new Splide(".splide:nth-child(1)", {
+          autoplay: true,
+          type: "loop",
+          interval: 5000,
+          perPage: 1,
+          arrows: false,
+          pagination: false,
+        }).mount();
+
+        const splide2 = new Splide(document.querySelectorAll(".splide")[1], {
+          autoHeight: true,
+          autoWidth: true,
+          autoplay: true,
+          perPage: 1,
+          perMove: 1,
+          type: "slide",
+          arrows: false,
+          pagination: false,
+        }).mount();
+
+        let gameSlider = document
+          .querySelectorAll(".game-slider__item")
+          .forEach((slider) => {
+            slider.addEventListener("click", () => {
+              let page = slider.getAttribute("page");
+              splide.go(parseInt(page) - 1);
+              console.log("paging to " + page);
+            });
+          });
+
+        splide.on("moved", (currentIndex, prevIndex) => {
+          let page = currentIndex + 1;
+          let activeSlider = document.querySelector(
+            ".game-slider__item[page='" + page + "']"
+          );
+
+          document
+            .querySelectorAll(".game-slider__item.active")
+            .forEach((slider) => {
+              slider.classList.remove("active");
+            });
+          activeSlider.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
